@@ -1,0 +1,4 @@
+type Query {
+    books(offset: Int = 0, limit: Int = 10): BookPage
+    book(id: ID!): Book
+}
