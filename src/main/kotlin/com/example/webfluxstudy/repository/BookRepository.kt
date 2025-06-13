@@ -1,8 +1,12 @@
 package com.example.webfluxstudy.repository
 
 import com.example.webfluxstudy.domain.Book
-import org.springframework.data.repository.reactive.ReactiveCrudRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface BookRepository : ReactiveCrudRepository<Book, String>
+interface BookRepository {
+    suspend fun findById(id: String): Book?
+    suspend fun findAll(offset: Int, limit: Int): List<Book>
+    suspend fun count(): Long
+    suspend fun save(book: Book): Book
+}
