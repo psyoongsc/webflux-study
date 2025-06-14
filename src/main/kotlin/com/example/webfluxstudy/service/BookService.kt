@@ -27,6 +27,13 @@ class BookService(
         return book
     }
 
+    suspend fun findFilteredBooks(offset: Int, limit: Int, titleContains: String?): BookListResult {
+        val total = bookRepository.count()
+        val items = bookRepository.findWithTitle(titleContains, offset, limit)
+
+        return BookListResult(total = total.toInt(), items = items)
+    }
+
     suspend fun createBook(command: CreateBookCommand): Book {
         val book = Book(title = command.title, author = command.author)
         return bookRepository.save(book)

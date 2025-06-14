@@ -14,9 +14,10 @@ class BookQueryResolver(
     @QueryMapping
     suspend fun books(
         @Argument offset: Int,
-        @Argument limit: Int
+        @Argument limit: Int,
+        @Argument titleContains: String?
     ): BookPageResponse {
-        val result = bookService.findAll(offset, limit)
+        val result = bookService.findFilteredBooks(offset, limit, titleContains)
         return BookPageResponse.from(result)
     }
 
