@@ -1,7 +1,7 @@
 package com.example.webfluxstudy.infrastructure
 
-import com.example.webfluxstudy.domain.Book
-import com.example.webfluxstudy.repository.BookRepository
+import com.example.webfluxstudy.domain.entity.Book
+import com.example.webfluxstudy.domain.repository.BookRepository
 import kotlinx.coroutines.reactor.awaitSingle
 import kotlinx.coroutines.reactor.awaitSingleOrNull
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate

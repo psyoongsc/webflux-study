@@ -1,9 +1,8 @@
 package com.example.webfluxstudy.graphql.mutation
 
-import com.example.webfluxstudy.domain.Book
 import com.example.webfluxstudy.graphql.dto.BookInput
 import com.example.webfluxstudy.graphql.dto.BookResponse
-import com.example.webfluxstudy.service.BookService
+import com.example.webfluxstudy.domain.service.BookService
 import jakarta.validation.Valid
 import org.springframework.graphql.data.method.annotation.Argument
 import org.springframework.graphql.data.method.annotation.MutationMapping

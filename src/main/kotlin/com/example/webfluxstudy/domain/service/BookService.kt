@@ -1,12 +1,9 @@
-package com.example.webfluxstudy.service
+package com.example.webfluxstudy.domain.service
 
-import com.example.webfluxstudy.domain.Book
-import com.example.webfluxstudy.repository.BookRepository
-import com.example.webfluxstudy.service.dto.BookListResult
-import com.example.webfluxstudy.service.dto.CreateBookCommand
-import kotlinx.coroutines.reactive.awaitFirst
-import kotlinx.coroutines.reactive.awaitSingle
-import kotlinx.coroutines.reactor.awaitSingleOrNull
+import com.example.webfluxstudy.domain.entity.Book
+import com.example.webfluxstudy.domain.repository.BookRepository
+import com.example.webfluxstudy.domain.dto.BookListResult
+import com.example.webfluxstudy.domain.dto.CreateBookCommand
 import org.springframework.stereotype.Service
 
 @Service
