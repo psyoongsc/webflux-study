@@ -1,6 +1,6 @@
 package com.example.webfluxstudy.graphql.dto
 
-import com.example.webfluxstudy.domain.Book
+import com.example.webfluxstudy.domain.entity.Book
 
 data class BookResponse(
     val id: String?,

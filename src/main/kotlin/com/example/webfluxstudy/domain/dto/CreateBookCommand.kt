@@ -1,4 +1,4 @@
-package com.example.webfluxstudy.service.dto
+package com.example.webfluxstudy.domain.dto
 
 data class CreateBookCommand (
     val title: String,

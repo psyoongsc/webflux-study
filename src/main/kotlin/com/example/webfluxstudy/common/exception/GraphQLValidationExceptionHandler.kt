@@ -1,4 +1,4 @@
-package com.example.webfluxstudy.graphql.exception
+package com.example.webfluxstudy.common.exception
 
 import graphql.GraphQLError
 import graphql.GraphqlErrorBuilder
