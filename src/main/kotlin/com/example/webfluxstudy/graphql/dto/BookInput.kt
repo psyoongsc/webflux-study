@@ -1,6 +1,6 @@
 package com.example.webfluxstudy.graphql.dto
 
-import com.example.webfluxstudy.service.dto.CreateBookCommand
+import com.example.webfluxstudy.domain.dto.CreateBookCommand
 import jakarta.validation.constraints.NotBlank
 
 data class BookInput(

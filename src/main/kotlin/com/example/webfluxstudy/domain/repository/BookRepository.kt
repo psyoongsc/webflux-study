@@ -1,6 +1,6 @@
-package com.example.webfluxstudy.repository
+package com.example.webfluxstudy.domain.repository
 
-import com.example.webfluxstudy.domain.Book
+import com.example.webfluxstudy.domain.entity.Book
 import org.springframework.stereotype.Repository
 
 @Repository

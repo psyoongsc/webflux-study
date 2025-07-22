@@ -1,6 +1,6 @@
 package com.example.webfluxstudy.graphql.dto
 
-import com.example.webfluxstudy.service.dto.BookListResult
+import com.example.webfluxstudy.domain.dto.BookListResult
 
 data class BookPageResponse(
     val total: Int,

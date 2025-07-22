@@ -2,7 +2,7 @@ package com.example.webfluxstudy.graphql.query
 
 import com.example.webfluxstudy.graphql.dto.BookPageResponse
 import com.example.webfluxstudy.graphql.dto.BookResponse
-import com.example.webfluxstudy.service.BookService
+import com.example.webfluxstudy.domain.service.BookService
 import org.springframework.graphql.data.method.annotation.Argument
 import org.springframework.graphql.data.method.annotation.QueryMapping
 import org.springframework.stereotype.Controller
