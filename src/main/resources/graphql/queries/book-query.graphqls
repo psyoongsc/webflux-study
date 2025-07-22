@@ -1,4 +1,8 @@
 type Query {
-    books(offset: Int = 0, limit: Int = 10): BookPage
+    books(
+        offset: Int = 0,
+        limit: Int = 10,
+        titleContains: String
+    ): BookPage
     book(id: ID!): Book
 }
